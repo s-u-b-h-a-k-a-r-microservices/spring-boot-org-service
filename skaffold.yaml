@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta8
+kind: Config
+metadata:
+  name: spring-boot-org-service
+build:
+  artifacts:
+    - image: subhakarkotta/spring-boot-org-service
+      jib: {}
+  tagPolicy:
+    sha256: {}
